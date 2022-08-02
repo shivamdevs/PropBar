@@ -1,0 +1,160 @@
+@import url("/utilities/apis-font/index.css");
+@import url("/utilities/web-icons/index.css");
+alert[__prop] {
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: #121212;
+  border-radius: 4px;
+  max-width: calc(100% - 20px);
+  color: #ffffff;
+  transition: 0.2s;
+  z-index: 1111111;
+  font-family: "Poppins", "Segoe Alt Regular", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 0 16px rgb(0 0 0 / 12%), 0 16px 16px rgb(0 0 0 / 24%);
+}
+alert[__prop] * {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe Alt Regular", sans-serif;
+}
+alert[__prop][dth="dark"],
+alert[__prop][dth="default"],
+alert[__prop][dth="inherit"] {
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 0 16px rgb(0 0 0 / 12%), 0 16px 16px rgb(0 0 0 / 24%);
+  background: #121212;
+  color: #ffffff;
+}
+alert[__prop][dth="light"] {
+  border: 1px solid rgba(200,200,200,.4);
+  box-shadow: 0 0 16px rgb(50 50 50 / 12%), 0 16px 16px rgb(50 50 50 / 24%);
+  background: #ffffff;
+  color: #121212;
+}
+alert[__prop][dlg="default"],
+alert[__prop][dlg="inherit"],
+alert[__prop][dlg="left"] {
+  left: 10px;
+}
+alert[__prop][dlg="center"] {
+  left: 50%;
+  transform: translateX(-50%);
+}
+alert[__prop][dlg="right"] {
+  right: 10px;left: auto;
+}
+alert[__prop] .__prop_mild {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+alert[__prop] .__prop_mild .__prop_extn {
+  display: flex;
+  flex-grow: 3;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 2px 16px;
+}
+alert[__prop] .__prop_mild .__prop_extn .__prop_text {
+  display: block;
+  width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 15px;
+  padding: 10px 0;
+  font-weight: 400;
+  color: inherit;
+  max-height: calc(100vh - 46px);
+  max-height: calc(var(--vh, 1vh) * 100 - 46px);
+  overflow: hidden auto;
+}
+alert[__prop] .__prop_mild .__prop_extn .__prop_text::-webkit-scrollbar {
+  width: 16px;
+}
+alert[__prop] .__prop_mild .__prop_extn .__prop_text::-webkit-scrollbar-thumb {
+  background: #727888;
+  background-clip: padding-box;
+  border: 4px solid transparent;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+alert[__prop][dth="light"] .__prop_mild .__prop_extn .__prop_text::-webkit-scrollbar-thumb {
+  background: #dadce0;
+  background-clip: padding-box;
+  border: 4px solid transparent;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+alert[__prop] .__prop_mild .__prop_extn .__prop_text::-webkit-scrollbar-track {
+  background: none;
+  border: none;
+}
+alert[__prop] .__prop_mild .__prop_extn.__prop_bnck {
+  cursor: pointer;
+  user-select: none;
+}
+alert[__prop] .__prop_mild .__prop_ctir {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  min-height: 100%;
+  padding: 0 10px 0 0;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 400px) {
+  alert[__prop] .__prop_mild .__prop_ctir {
+    flex-wrap: wrap;
+  }
+}
+alert[__prop] .__prop_mild .__prop_ctir button {
+  display: flex;
+  width: auto;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 15px;
+  font-weight: inherit;
+  background: inherit;
+  border-radius: 2px;
+  color: #08f;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.2s;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe Alt Regular", sans-serif;
+}
+alert[__prop] .__prop_mild .__prop_ctir button[type="dismiss"] {
+  padding: 0;
+  border: none;
+  height: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  width: 30px;
+  min-width: 30px;
+  max-width: 30px;
+}
+alert[__prop] .__prop_mild .__prop_ctir button[type="dismiss"] svg {
+  fill: #aaaaaa;
+  width: 22px;
+  height: 22px;
+}
+alert[__prop] .__prop_mild .__prop_ctir button:hover {
+  background: rgba(255, 255, 255, 10%);
+}
+alert[__prop][dth="light"] .__prop_mild .__prop_ctir button:hover {
+  background: rgba(0, 0, 0, 10%);
+}
