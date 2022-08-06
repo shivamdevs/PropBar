@@ -1,6 +1,9 @@
 # Propbar
 Shows an custom alert rather than system alert.
 
+##Propbar 3
+From Propbar 3 onwards all files will be produced using VanillaJS and will be backward compactible (upto valid reasons).
+
 ## Propbar 2, 1
 These older versions are not recommended to be used.<br />
 Propbar 1 was a base Project which was made with VanillaJS but it contained very silly mistakes.<br />
