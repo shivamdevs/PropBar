@@ -1,15 +1,13 @@
-// Solonet.in :: PropBar - Javascript Library
-// Version :: 3.0.0 - MIT License
-
-// For detailed information visit :: https://www.solonet.in/propbar
+// Projset :: PropBar - Javascript Library
+// Version :: 2.0.0 - MIT License
 
 // Essential modules
-// jScript Library :: https://www.solonet.in/jscript
+// jScript Library
 
 var __propbar__custom__event__;
 
 (function() {
-  if ( !window.jScript ) return delete __propbar__custom__event__, console.log( '%c\'PropBar\' needs \'jScript Library\' to run.\nGet from https://www.solonet.in/jscript\nOr get \'PropBar Vanilla\' from https://www.solonet.in/propbar/vanilla' , 'font-weight: 500' );
+  if ( !window.jScript ) return delete __propbar__custom__event__, console.log( '%c\'PropBar\' needs \'jScript Library\' to run.\nGet from https://github.com/Projset/jScript' , 'font-weight: 500' );
   Js.styleSheet({
     'propbar-container' : {
       zIndex : '999998 !important',
