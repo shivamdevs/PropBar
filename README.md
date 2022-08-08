@@ -1,7 +1,7 @@
 # Propbar
 Shows an custom alert rather than system alert.
 
-##Propbar 3
+## Propbar 3
 From Propbar 3 onwards all files will be produced using VanillaJS and will be backward compactible (upto valid reasons).
 
 ## Propbar 2, 1
@@ -11,5 +11,4 @@ Propbar 2 whereas was improved much further by making it dependent on jScript Li
 Thus Propbar 3 was made again using VanillaJS but with much more options, functionality, animations etc.\
 \
 So we recommend using Propbar 3 or above in your projects.\
-\
 Propbar 1 and 2 were included just for information purpose only.
